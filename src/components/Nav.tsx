@@ -16,7 +16,7 @@ export const Nav: React.FC<NavProps> = ({ links }) => {
       <div className="bg-gray-900 w-full flex flex-col items-end">
         <div className="flex flex-row w-1/4 text-2xl justify-around">
           {links.map((link, index) => (
-            <div className="text-gray-200 hover:text-blue-300">
+            <div className="text-gray-200 hover:text-blue-300" key={`link-${index}`}>
               <Link to={links[index].to} key={`link-${index}`}>
                 {links[index].title}
               </Link>
