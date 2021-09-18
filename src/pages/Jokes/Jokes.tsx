@@ -9,7 +9,7 @@ export const Jokes: React.FC = () => {
                 Got ya
             </div>
             <div className='w-auto mx-auto'>
-                <Image url={inigo} height='4/5'/>
+                <Image url={inigo} height='2/3'/>
             </div>
         </div>
     )
