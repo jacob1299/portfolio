@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { ContactCards } from '../../components/ContactCards'
 import { Button } from '../../components/Button'
-import { Icon } from '../../components/Icon'
 import { FaCloudDownloadAlt } from 'react-icons/fa'
 import pdf from '../../assets/badolato_resume.pdf'
 
