@@ -10,9 +10,6 @@ import { Home } from './pages/Home/Home'
 import { Bio } from './pages/Bio/Bio'
 import { Contact } from './pages/Contact/Contact'
 import { Jokes } from './pages/Jokes/Jokes'
-import instagram from './assets/instagram_b&w.png'
-import linkedin from './assets/linkedin_b&w.png'
-import github from './assets/github_b&w.png'
 import { FiInstagram } from 'react-icons/fi'
 import { GrLinkedin } from 'react-icons/gr'
 import { FaGithub } from 'react-icons/fa'
@@ -37,11 +34,11 @@ const links = [
 const footerProps = [
   {
       link: 'https://github.com/jacob1299', 
-      Icon: GrLinkedin
+      Icon: FaGithub
   }, 
   {
-      link: 'www.linkedin.com/in/jacob-badolato',
-      Icon: FaGithub
+      link: 'https://www.linkedin.com/in/jacob-badolato',
+      Icon: GrLinkedin
   }, 
   {
       link: 'https://www.instagram.com/jacob__1299/', 
