@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from '../../components/Icon'
+import { Image } from '../../components/Image'
 import inigo from '../../assets/inigo.jpg'
 
 export const Jokes: React.FC = () => {
@@ -9,7 +9,7 @@ export const Jokes: React.FC = () => {
                 Got ya
             </div>
             <div className='w-auto mx-auto'>
-                <Icon url={inigo} height='4/5'/>
+                <Image url={inigo} height='4/5'/>
             </div>
         </div>
     )
