@@ -13,13 +13,15 @@ type FooterItem = {
 
 export const Footer: React.FC<FooterProps> = ({footerItems}) => {
     return (
-        <div className="flex flex-row justify-around bg-black w-full h-auto text-white mt-auto">
-              {footerItems.map((item, index) => (
-                <a className="hover:text-blue text-white" href={`${item}[${index}].link`} >
-                    <div>{item.link}</div>
+        <div className='bg-black w-screen mt-auto'>
+            <div className="flex flex-row justify-around w-1/2 mx-auto text-white">
+              {React.Children.toArray(footerItems.map((item, index) => (
+                <a className="my-2" href={`${item}[${index}].link`} >
+                    <div><Icon url={item.image} height='12'/></div>
                 </a>
-              ))}  
+              )))}  
+            </div>
         </div>
+        
     )
 }
-

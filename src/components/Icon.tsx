@@ -2,13 +2,13 @@ import React from 'react'
 
 interface IconProps {
     url: string
+    height: string
+    iconClass?: string
 }
 
-export const Icon: React.FC<IconProps> = ({url}) => {
+export const Icon: React.FC<IconProps> = ({url, height, iconClass}) => {
     return (
-        <div className="h-8 w-8">
-            <img alt="" src={url} />
-        </div>
+            <img alt="" src={url} className={`rounded-xl w-auto h-${height} ${iconClass}`}/>
     )
 }
 
