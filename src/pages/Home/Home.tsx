@@ -14,6 +14,9 @@ export const Home: React.FC = () => {
                         I have a strong passion for learning and desire to always do my best.
                         <br />Some call this a try-hard, but I call it <span className='text-green-600'>success.</span>
                     </p>
+                    <div>
+                        {`<DEVELOPER><br /><ENGINEER></ENGINEER><DEVELOPER>`}
+                    </div>
                 </div>
                 <Icon url={headshot} height='11/12' iconClass='filter grayscale hover:grayscale-0 ml-auto mr-3 my-3 '/>
             </div>
