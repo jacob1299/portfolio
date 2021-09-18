@@ -20,7 +20,12 @@ export const Footer: React.FC<FooterProps> = ({footerItems}) => {
               {React.Children.toArray(footerItems.map((item, index) => (
                 <a className="my-2" href={`${item}[${index}].link`} >
                     {item.image && <Image url={item.image} height='12'/>}
-                    {item.Icon && <item.Icon size='2em'></item.Icon>}
+                    {
+                        item.Icon && 
+                        <a href={item.link}>
+                            <item.Icon size='2em'></item.Icon>
+                        </a>
+                    }
                 </a>
               )))}  
             </div>
