@@ -2,13 +2,12 @@ import React from 'react'
 
 interface ImageProps {
     url: string
-    height: string
-    iconClass?: string
+    imageClass?: string
 }
 
-export const Image: React.FC<ImageProps> = ({url, height, iconClass}) => {
+export const Image: React.FC<ImageProps> = ({url, imageClass}) => {
     return (
-            <img alt="" src={url} className={`rounded-xl w-auto h-${height} ${iconClass}`}/>
+            <img alt="" src={url} className={`rounded-xl ${imageClass}`}/>
     )
 }
 
