@@ -5,12 +5,10 @@ import inigo from '../../assets/inigo.jpg'
 export const Jokes: React.FC = () => {
     return (
         <div className='flex flex-col overflow-hidden h-full w-full bg-gray-700'>
-            <div className='text-3xl text-center text-pink-600 font-extrabold py-4'>
-                Got ya
+            <div className='text-3xl font-extrabold text-center text-white font-extrabold py-4'>
+                Inconceivable!
             </div>
-            <div className='w-auto mx-auto'>
-                <Image url={inigo} height='2/3'/>
-            </div>
+            <Image url={inigo} imageClass='h-2/3 mx-auto my-auto'/>
         </div>
     )
 }
