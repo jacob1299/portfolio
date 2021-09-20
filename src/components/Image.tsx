@@ -1,13 +1,10 @@
-import React from 'react'
+import React from "react";
 
 interface ImageProps {
-    url: string
-    imageClass?: string
+  url: string;
+  imageClass?: string;
 }
 
-export const Image: React.FC<ImageProps> = ({url, imageClass}) => {
-    return (
-            <img alt="" src={url} className={`rounded-xl ${imageClass}`}/>
-    )
-}
-
+export const Image: React.FC<ImageProps> = ({ url, imageClass }) => {
+  return <img alt="" src={url} className={`rounded-xl ${imageClass}`} />;
+};

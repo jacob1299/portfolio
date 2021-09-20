@@ -1,15 +1,9 @@
-import React from 'react'
+import React from "react";
 
 interface CardProps {
-    title?: string
-    
+  title?: string;
 }
-
 
 export const Card: React.FC<CardProps> = () => {
-    return (
-        <div className='w-screen h-screen'>
-
-        </div>
-    )
-}
+  return <div className="w-screen h-screen"></div>;
+};
