@@ -15,11 +15,11 @@ export const ContactCards: React.FC<ContactCardsProps> = ({ cards }) => {
       {React.Children.toArray(
         cards.map((item, index) => (
           <div
-            className="bg-indigo-300 rounded-lg justify-center w-48 h-48 hover:bg-indigo-400"
+            className="bg-[#264653] rounded-lg justify-center w-48 h-48 hover:bg-[#264679]"
             key={`card-${index}`}
           >
-            <p className="text-2xl text-center">{item.title}</p>
-            <p className="text-center">{item.content}</p>
+            <p className="text-2xl text-[#e76f51] text-center">{item.title}</p>
+            <p className="text-center text-[#e76f51]">{item.content}</p>
           </div>
         ))
       )}
