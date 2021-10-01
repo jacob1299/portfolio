@@ -30,20 +30,18 @@ const contacts = [
 
 export const Contact: React.FC = () => {
   return (
-    <div className="bg-[#e9c46a] h-full w-full">
-      <Button className="flex flex-row bg-[#e76f51] mx-3 w-auto text-gray-900 mt-2 space-x-4">
+    <div className="bg-gray-100 h-full w-full">
+      <Button className="flex flex-row mx-3 w-auto text-gray-900 mt-2 space-x-4">
         <a href={pdf} download="badolato_resume.pdf">
           Resumé
         </a>
         <FaCloudDownloadAlt className="my-1" />
       </Button>
       <div className="flex flex-col justify-center pt-12">
-        <div className="text-2xl text-center text-[#264653] mb-16 font-semibold">
+        <div className="text-2xl text-center text-black mb-16 font-semibold">
           Feel free to reach out to me at any of the following!
         </div>
-        <div className="flex flex-col ">
-          <ContactCards cards={contacts} />
-        </div>
+        <ContactCards cards={contacts} />
       </div>
     </div>
   );

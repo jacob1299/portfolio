@@ -42,25 +42,27 @@ const footerProps = [
 
 function App() {
   return (
-    <div className="flex flex-col h-screen w-screen">
-      <Router>
-        <Nav links={links} />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/bio">
-            <Bio />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/jokes">
-            <Jokes />
-          </Route>
-        </Switch>
-        <Footer footerItems={footerProps} />
-      </Router>
+    <div className="bg-gray-100">
+      <div className="bg-gray-100 h-screen w-11/12 lg:w-2/3 xl:w-1/2 mx-auto">
+        <Router>
+          <Nav links={links} />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/bio">
+              <Bio />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/jokes">
+              <Jokes />
+            </Route>
+          </Switch>
+          <Footer footerItems={footerProps} />
+        </Router>
+      </div>
     </div>
   );
 }

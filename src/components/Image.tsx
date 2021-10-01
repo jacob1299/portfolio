@@ -6,5 +6,5 @@ interface ImageProps {
 }
 
 export const Image: React.FC<ImageProps> = ({ url, imageClass }) => {
-  return <img alt="" src={url} className={`rounded-xl ${imageClass}`} />;
+  return <img alt="" src={url} className={`rounded-lg ${imageClass}`} />;
 };
