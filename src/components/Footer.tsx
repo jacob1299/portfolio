@@ -16,10 +16,10 @@ export const Footer: React.FC<FooterProps> = ({ footerItems }) => {
   const width = window.screen.width;
 
   return (
-    <div className="flex flex-0 justify-around bg-none mx-auto w-full lg:w-1/2 bottom-0 fixed">
+    <div className="flex flex-0 justify-around bg-none mx-auto w-full lg:w-1/2 bottom-0 fixed my-2">
       {React.Children.toArray(
         footerItems.map((item, index) => (
-          <>
+          <div className='my-auto'>
             {item.image && <Image url={item.image} imageClass="h-14" />}
             {item.Icon && (
               <a href={item.link}>
@@ -30,7 +30,7 @@ export const Footer: React.FC<FooterProps> = ({ footerItems }) => {
                 )}
               </a>
             )}
-          </>
+          </div>
         ))
       )}
     </div>
