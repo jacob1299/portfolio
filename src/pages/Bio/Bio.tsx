@@ -1,17 +1,17 @@
 import React from "react";
-import innsbruck from "../../../src/innsbruck.jpg";
+import michael from "../../../src/assets/michael.jpg";
 
 export const Bio: React.FC = () => {
   return (
     <div
       className="w-auto h-full bg-auto bg-cover"
       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url(${innsbruck})`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)), url(${michael})`,
       }}
     >
       <div className="flex flex-col p-2 w-full h-full text-black my-auto mx-auto text-center">
-        <h2 className="text-3xl font-bold pb-8">About Me</h2>
-        <p className="px-16 font-bold">
+        <h2 className="text-8xl lg:text-3xl font-bold pb-8">About Me</h2>
+        <p className="px-16 font-bold text-3xl lg:text-sm">
           Ever since I was a child, I have been fascinated by the weather.
           You're probably wondering why this matters since I am a software
           engineer. Well, it gave me a strong passion for learning and led me to

@@ -13,22 +13,26 @@ type FooterItem = {
 };
 
 export const Footer: React.FC<FooterProps> = ({ footerItems }) => {
+  const width = window.screen.width;
+
   return (
-    <div className="bg-[#f4a261] w-screen">
-      <div className="flex flex-row justify-around w-1/2 my-2 mx-auto text-white">
-        {React.Children.toArray(
-          footerItems.map((item, index) => (
-            <div className="my-auto">
-              {item.image && <Image url={item.image} imageClass="h-14" />}
-              {item.Icon && (
-                <a href={item.link}>
-                  <item.Icon size="3em" className="text-[#264653]"></item.Icon>
-                </a>
-              )}
-            </div>
-          ))
-        )}
-      </div>
+    <div className="flex flex-0 justify-around bg-none mx-auto w-full lg:w-1/2 bottom-0 fixed my-2">
+      {React.Children.toArray(
+        footerItems.map((item, index) => (
+          <div className='my-auto'>
+            {item.image && <Image url={item.image} imageClass="h-14" />}
+            {item.Icon && (
+              <a href={item.link}>
+                {width < 768 ? (
+                  <item.Icon size="6em" className="text-black "></item.Icon>
+                ) : (
+                  <item.Icon size="3em" className="text-black "></item.Icon>
+                )}
+              </a>
+            )}
+          </div>
+        ))
+      )}
     </div>
   );
 };
