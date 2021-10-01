@@ -30,7 +30,7 @@ const contacts = [
 
 export const Contact: React.FC = () => {
   return (
-    <div className="bg-gray-100 h-full w-full">
+    <div className="bg-gray-100 h-auto w-full">
       <Button className="flex flex-row mx-3 w-auto text-gray-900 mt-2 space-x-4">
         <a href={pdf} download="badolato_resume.pdf">
           Resumé
